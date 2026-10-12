@@ -1,0 +1,132 @@
+:root {
+  --bg: #fafafa;
+  --fg: #1f2933;
+  --muted: #616e7c;
+  --accent: #0b5cad;
+  --line: #d9dee3;
+  --card: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14181d;
+    --fg: #e6e9ec;
+    --muted: #9aa5b1;
+    --accent: #5aa9f0;
+    --line: #2c333b;
+    --card: #1b2026;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  padding: 56px 20px 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.tagline {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover { text-decoration: underline; }
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+th { color: var(--muted); font-weight: 600; font-size: 0.9rem; }
+
+.hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+code {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.85em;
+}
+
+.placeholder {
+  border: 2px dashed var(--line);
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+footer {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header { padding-top: 32px; }
+  header h1 { font-size: 1.6rem; }
+  section { padding: 16px; }
+}

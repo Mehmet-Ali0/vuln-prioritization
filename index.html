@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vulnerability Prioritization Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Vulnerability Prioritization Assistant</h1>
+  <p class="tagline">Scanners tell you what is broken. We tell you what to fix first, and why.</p>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#documents">Documents</a>
+    <a href="#backlog">Backlog</a>
+    <a href="#demo">Demo</a>
+    <a href="#team">Team</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="overview">
+  <h2>Overview</h2>
+  <p>
+    Security scanners produce thousands of findings, but teams can fix only a few each week,
+    and a CVSS score alone does not show which ones matter. Our tool merges the output of several
+    scanners, adds real-world danger signals from free public sources (CISA KEV, EPSS, NVD),
+    and combines them with context about each asset into a ranked to-do list. Every item in the
+    list comes with a plain explanation and a suggested fix.
+  </p>
+  <ul>
+    <li><strong>Reader:</strong> converts scanner output (Trivy first, then Nmap) into one common format.</li>
+    <li><strong>Enricher:</strong> adds exploitation evidence and likelihood data from public sources.</li>
+    <li><strong>Scorer:</strong> combines severity, exploit evidence, and asset context into a priority score and records the reason.</li>
+    <li><strong>Interface:</strong> shows the explained ranked list next to a plain CVSS ranking.</li>
+  </ul>
+  <p><em>Course:</em> CMPE 491 Senior Design Project I, TED University, Fall 2026.</p>
+</section>
+
+<section id="documents">
+  <h2>Documents</h2>
+  <p>All reports are linked here as soon as they are submitted.</p>
+  <table>
+    <thead>
+      <tr><th>Deliverable</th><th>Due</th><th>Link</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Project Proposal</td><td>16.10.2026</td><td>coming soon</td></tr>
+      <tr><td>Project Specifications Report</td><td>23.10.2026</td><td>coming soon</td></tr>
+      <tr><td>Analysis Report</td><td>20.11.2026</td><td>coming soon</td></tr>
+      <tr><td>High-Level Design Report</td><td>31.12.2026</td><td>coming soon</td></tr>
+      <tr><td>Presentation and poster</td><td>04-17.01.2027</td><td>coming soon</td></tr>
+    </tbody>
+  </table>
+  <p class="hint">Put the PDF files in the <code>docs/</code> folder and link them like
+  <code>&lt;a href="docs/specifications.pdf"&gt;PDF&lt;/a&gt;</code>.</p>
+</section>
+
+<section id="backlog">
+  <h2>TODO / Backlog</h2>
+  <p>Every version of the backlog is kept here, so progress can be followed over the semester.</p>
+  <table>
+    <thead>
+      <tr><th>Version</th><th>Date</th><th>Link</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>v1</td><td>23.10.2026</td><td>coming soon</td></tr>
+      <tr><td>v2</td><td>20.11.2026</td><td>coming soon</td></tr>
+      <tr><td>v3</td><td>31.12.2026</td><td>coming soon</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="demo">
+  <h2>Demo</h2>
+  <p>A short screen recording and screenshots will be added here once the first prototype runs.</p>
+  <div class="placeholder">Demo video / screenshots: coming soon</div>
+</section>
+
+<section id="team">
+  <h2>Team</h2>
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Student Name 1</td><td>Team member</td></tr>
+      <tr><td>Student Name 2</td><td>Team member</td></tr>
+      <tr><td>Student Name 3</td><td>Team member</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Supervisor:</strong> Prof. / Dr. Name Surname</p>
+  <p><strong>Jury members:</strong> Name Surname, Name Surname</p>
+</section>
+
+</main>
+
+<footer>
+  <p>CMPE 491 Senior Design Project I &middot; TED University &middot; 2026-2027 Fall</p>
+</footer>
+
+</body>
+</html>
